@@ -75,7 +75,6 @@ for i in range(nWorkflows):
         c = ifeat[inst]
         f.write(
             """
-    steps:
       - name: test on {}
         run: ./bin/c-interface-solver ./instances/{}.mps.gz {} {} {} {}
 """.format(
