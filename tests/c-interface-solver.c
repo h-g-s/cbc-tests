@@ -152,6 +152,11 @@ int main( int argc, char **argv ) {
         exit(1);
     }
 
+    printf("Starting test with the CBC C Interface. CBC Build info:\n\n");
+    char binfo[2048];
+    Cbc_getBuildInfo(binfo);
+    printf("%s\n", binfo);
+
     char *s = strstr(argv[1], ".mps.gz");
     if (s)
         *s = '\0';

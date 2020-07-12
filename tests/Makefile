@@ -4,7 +4,7 @@
 #
 #`pkg-config --libs cbc cgl osi-clp clp osi coinutils`
 
-CFLAGS=-Og -g -fsanitize=address,leak
+CFLAGS=-Og -g
 
 all:c-interface-solver
 
