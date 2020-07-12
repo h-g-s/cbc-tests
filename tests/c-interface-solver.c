@@ -26,12 +26,13 @@ char test_step[512] = "";
 char test_element[512] = "";
 
 #define ANNOUNCE_ERROR() { \
+    fflush(stdout); fflush(stderr); \
     fprintf(stderr, "\n************************* ERROR *************************\n"); \
     fprintf(stderr, "  instance name: %s\n", instance_name); \
     fprintf(stderr, "      test step: %s\n", test_step); \
     fprintf(stderr, "   test element: %s\n", test_element); \
     fprintf(stderr, "    source code: %s:%d\n", __FILE__, __LINE__); \
-    fflush(stderr); fflush(stderr); \
+    fflush(stdout); fflush(stderr); \
 }
 
 /* Checks for error if value is not exactly equal */
