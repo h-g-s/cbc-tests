@@ -64,6 +64,7 @@ for i in range(nWorkflows):
         """
   instances-batch-{}:
     runs-on: ubuntu-20.04
+    continue-on-error: True
     steps:
       - uses: actions/checkout@v2
 """.format(

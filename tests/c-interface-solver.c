@@ -205,8 +205,8 @@ int main( int argc, char **argv ) {
         goto END;
     }
 
-    Cbc_setIntParam(m, INT_PARAM_MAX_NODES, 1000);
-    Cbc_setDblParam(m, DBL_PARAM_TIME_LIMIT, 300);
+//Cbc_setIntParam(m, INT_PARAM_MAX_NODES, 1000);
+ //   Cbc_setDblParam(m, DBL_PARAM_TIME_LIMIT, 300);
 
     strcpy(test_step, "integer optimization");
     Cbc_solve(m);
