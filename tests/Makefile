@@ -8,6 +8,9 @@ CFLAGS=-Og -g
 
 all:c-interface-solver
 
+clean:
+	rm -f c-interface-solver *.o
+
 c-interface-solver:c-interface-solver.o
 	g++ c-interface-solver.o $(CFLAGS) -o c-interface-solver `pkg-config --libs cbc cgl osi-clp clp osi coinutils`
 
