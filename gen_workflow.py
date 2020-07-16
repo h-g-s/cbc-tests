@@ -77,7 +77,7 @@ for i in range(nWorkflows):
         f.write(
             """
       - name: test on {}
-        run: gunzip ./instances/{}.mps.gz ; ./bin/c-interface-solver ./instances/{}.mps {} {} {} {}
+        run:  ./bin/c-interface-solver ./instances/{}.mps.gz {} {} {} {}
 """.format(
                 inst, c[0], c[0], c[1], c[2], c[3], c[4]
             )
