@@ -79,7 +79,7 @@ for i in range(nWorkflows):
       - name: test on {}
         run:  ./bin/c-interface-solver ./instances/{}.mps.gz {} {} {} {}
 """.format(
-                inst, c[0], c[0], c[1], c[2], c[3], c[4]
+                inst, c[0], c[1], c[2], c[3], c[4]
             )
         )
         j += 1

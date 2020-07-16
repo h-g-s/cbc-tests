@@ -13,50 +13,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on exp-1-500-5-5
-        run:  ./bin/c-interface-solver ./instances/exp-1-500-5-5.mps.gz exp-1-500-5-5 28427.048404552137 65886.99999999999 65886.99999999999
+      - name: test on pp08a
+        run:  ./bin/c-interface-solver ./instances/pp08a.mps.gz 2748.345238095238 7349.99999999997 7349.99999999997 True
 
-      - name: test on gesa3
-        run:  ./bin/c-interface-solver ./instances/gesa3.mps.gz gesa3 27833632.450665344 27991042.64838268 27991042.648382682
 
-      - name: test on mtest4ma
-        run:  ./bin/c-interface-solver ./instances/mtest4ma.mps.gz mtest4ma 33968.065673149766 52147.99999999381 52147.999999999134
+      - name: test on roll3000
+        run:  ./bin/c-interface-solver ./instances/roll3000.mps.gz 11097.127676855102 12890.0 12890.0 True
 
-      - name: test on p0548
-        run:  ./bin/c-interface-solver ./instances/p0548.mps.gz p0548 315.2549019607843 8691.0 8691.0
 
-      - name: test on nu25-pr12
-        run:  ./bin/c-interface-solver ./instances/nu25-pr12.mps.gz nu25-pr12 52757.5 53905.0 53905.0
+      - name: test on neos-1441553
+        run:  ./bin/c-interface-solver ./instances/neos-1441553.mps.gz 7.6348039215686265 8.0 8.0 True
 
-      - name: test on neos-709469
-        run:  ./bin/c-interface-solver ./instances/neos-709469.mps.gz neos-709469 493.16000000000014 493.15999999999997 493.15999999999997
 
-      - name: test on gen_ip_031
-        run:  ./bin/c-interface-solver ./instances/gen_ip_031.mps.gz gen_ip_031 -3853.7694434557384 -3831.3053682222926 -3831.0625495000004
+      - name: test on neos-5192052-neckar
+        run:  ./bin/c-interface-solver ./instances/neos-5192052-neckar.mps.gz -11980000.0 -11670000.0 -11670000.0 True
 
-      - name: test on drayage-100-23
-        run:  ./bin/c-interface-solver ./instances/drayage-100-23.mps.gz drayage-100-23 11714.141979217546 103333.87407302856 103333.87407302856
 
-      - name: test on gen_ip_035
-        run:  ./bin/c-interface-solver ./instances/gen_ip_035.mps.gz gen_ip_035 -9091.735513807036 -8995.067662467462 -8994.48425448
+      - name: test on layer2
+        run:  ./bin/c-interface-solver ./instances/layer2.mps.gz -22580999.99982749 -13855499.9998 -13855499.9998 True
 
-      - name: test on 23588
-        run:  ./bin/c-interface-solver ./instances/23588.mps.gz 23588 7649.866133822498 8090.0 8090.0
 
-      - name: test on pk1
-        run:  ./bin/c-interface-solver ./instances/pk1.mps.gz pk1 0.0 11.0 11.0
+      - name: test on neos-1171737
+        run:  ./bin/c-interface-solver ./instances/neos-1171737.mps.gz -195.0 -195.0 -195.0 True
 
-      - name: test on dcmulti
-        run:  ./bin/c-interface-solver ./instances/dcmulti.mps.gz dcmulti 183975.53969317526 188170.96253859182 188186.5
 
-      - name: test on gen_ip_081
-        run:  ./bin/c-interface-solver ./instances/gen_ip_081.mps.gz gen_ip_081 812.984965313456 835.2443364167914 835.2829775442999
+      - name: test on cost266-UUE
+        run:  ./bin/c-interface-solver ./instances/cost266-UUE.mps.gz 20161515.663928583 25148940.559999935 25148940.560000002 True
 
-      - name: test on beasleyC3
-        run:  ./bin/c-interface-solver ./instances/beasleyC3.mps.gz beasleyC3 40.42682926829263 754.0 754.0
 
-      - name: test on fastxgemm-n2r6s0t2
-        run:  ./bin/c-interface-solver ./instances/fastxgemm-n2r6s0t2.mps.gz fastxgemm-n2r6s0t2 27.0 230.0 230.0
+      - name: test on gen_ip_029
+        run:  ./bin/c-interface-solver ./instances/gen_ip_029.mps.gz -2963.635371957432 -2796.6145299640007 -2796.6145299639998 True
+
+
+      - name: test on p0282
+        run:  ./bin/c-interface-solver ./instances/p0282.mps.gz 176867.50334911313 258411.0 258411.0 True
+
+
+      - name: test on neos-1595230
+        run:  ./bin/c-interface-solver ./instances/neos-1595230.mps.gz 2.692307692307693 9.0 9.0 True
+
+
+      - name: test on gen_ip_052
+        run:  ./bin/c-interface-solver ./instances/gen_ip_052.mps.gz -2960.9376457649187 -2909.9308171600005 -2909.9308171599996 True
+
+
+      - name: test on f2gap201600
+        run:  ./bin/c-interface-solver ./instances/f2gap201600.mps.gz 76429.86229621104 76449.0 76453.0 True
+
+
+      - name: test on beavma
+        run:  ./bin/c-interface-solver ./instances/beavma.mps.gz 155777.62784710378 383284.9999999972 383284.9999999972 True
+
+
+      - name: test on modglob
+        run:  ./bin/c-interface-solver ./instances/modglob.mps.gz 20430947.618853647 20739478.23711925 20740508.08630824 True
+
+
+      - name: test on p0033
+        run:  ./bin/c-interface-solver ./instances/p0033.mps.gz 2520.5717391304347 3089.0 3089.0 True
+
 
   instances-batch-1:
     runs-on: ubuntu-20.04
@@ -64,50 +79,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: test on l152lav
+        run:  ./bin/c-interface-solver ./instances/l152lav.mps.gz 4656.363636363635 4722.0 4722.0 True
+
+
+      - name: test on neos-1396125
+        run:  ./bin/c-interface-solver ./instances/neos-1396125.mps.gz 388.55239976630634 3000.040740741066 3000.0472222226 True
+
+
+      - name: test on gen_ip_039
+        run:  ./bin/c-interface-solver ./instances/gen_ip_039.mps.gz 2849.4123638986225 2891.7439627234003 2891.7439627234003 True
+
+
+      - name: test on misc06
+        run:  ./bin/c-interface-solver ./instances/misc06.mps.gz 12841.689392283552 12850.073741146787 12850.86073738254 True
+
+
+      - name: test on compact_abz5
+        run:  ./bin/c-interface-solver ./instances/compact_abz5.mps.gz 859.0 1234.0 1234.0 True
+
+
+      - name: test on neos-911970
+        run:  ./bin/c-interface-solver ./instances/neos-911970.mps.gz 23.259999999999998 54.760000000000005 54.760000000000005 True
+
+
+      - name: test on haprp
+        run:  ./bin/c-interface-solver ./instances/haprp.mps.gz 3665963.213505806 3673280.6816849993 3673280.681685 True
+
+
+      - name: test on qiu
+        run:  ./bin/c-interface-solver ./instances/qiu.mps.gz -931.6388510598533 -132.87313694699986 -132.87313694699986 True
+
+
+      - name: test on set1ch
+        run:  ./bin/c-interface-solver ./instances/set1ch.mps.gz 32007.729870234445 54537.75 54537.75 True
+
+
+      - name: test on layer3
+        run:  ./bin/c-interface-solver ./instances/layer3.mps.gz -3724539998.602797 -2429509995.0 -2429509995.0 True
+
+
+      - name: test on gmu-35-40
+        run:  ./bin/c-interface-solver ./instances/gmu-35-40.mps.gz -2406943.5563428816 -2406796.023892996 -2406607.9743 True
+
+
+      - name: test on neos-1171448
+        run:  ./bin/c-interface-solver ./instances/neos-1171448.mps.gz -309.0 -309.0 -309.0 True
+
+
       - name: test on rlp1
-        run:  ./bin/c-interface-solver ./instances/rlp1.mps.gz rlp1 13.244444444444449 15.0 15.0
+        run:  ./bin/c-interface-solver ./instances/rlp1.mps.gz 13.244444444444449 15.0 15.0 True
 
-      - name: test on j3041_1
-        run:  ./bin/c-interface-solver ./instances/j3041_1.mps.gz j3041_1 0.12389597644749983 2.9999991015004204 2.9999991015004213
 
-      - name: test on neos-3083819-nubu
-        run:  ./bin/c-interface-solver ./instances/neos-3083819-nubu.mps.gz neos-3083819-nubu 6290575.552807326 6307996.0 6307996.0
+      - name: test on neos-3216931-puriri
+        run:  ./bin/c-interface-solver ./instances/neos-3216931-puriri.mps.gz 58817.35306581276 71320.0 71320.0 True
 
-      - name: test on gmu-35-50
-        run:  ./bin/c-interface-solver ./instances/gmu-35-50.mps.gz gmu-35-50 -2608070.315743008 -2608039.358722396 -2607849.2281
 
-      - name: test on gen_ip_028
-        run:  ./bin/c-interface-solver ./instances/gen_ip_028.mps.gz gen_ip_028 -15586.545705640205 -15531.976195375732 -15530.7387333
+      - name: test on rgn
+        run:  ./bin/c-interface-solver ./instances/rgn.mps.gz 48.79999855999996 82.19998431599916 82.19998431599916 True
 
-      - name: test on ran12x21
-        run:  ./bin/c-interface-solver ./instances/ran12x21.mps.gz ran12x21 3157.377442025726 3664.0000000000177 3664.0000000000177
-
-      - name: test on nsa
-        run:  ./bin/c-interface-solver ./instances/nsa.mps.gz nsa 91.44793960908102 120.0 120.0
-
-      - name: test on supportcase17
-        run:  ./bin/c-interface-solver ./instances/supportcase17.mps.gz supportcase17 0.0 1330.0 1330.0
-
-      - name: test on p0282
-        run:  ./bin/c-interface-solver ./instances/p0282.mps.gz p0282 176867.50334911313 258411.0 258411.0
-
-      - name: test on drayage-25-23
-        run:  ./bin/c-interface-solver ./instances/drayage-25-23.mps.gz drayage-25-23 11714.141979217544 101282.64701843262 101282.64701843262
-
-      - name: test on gen_ip_077
-        run:  ./bin/c-interface-solver ./instances/gen_ip_077.mps.gz gen_ip_077 -5931.32331817741 -5863.642909193451 -5863.361334900001
-
-      - name: test on mc11
-        run:  ./bin/c-interface-solver ./instances/mc11.mps.gz mc11 608.8443396226415 11688.0 11689.0
-
-      - name: test on gen_ip_072
-        run:  ./bin/c-interface-solver ./instances/gen_ip_072.mps.gz gen_ip_072 3021.9840408787945 3086.748486173573 3087.006998152
-
-      - name: test on gesa2-o
-        run:  ./bin/c-interface-solver ./instances/gesa2-o.mps.gz gesa2-o 25476489.678122617 25779682.628816374 25780204.239210248
-
-      - name: test on T2_300_1000_0
-        run:  ./bin/c-interface-solver ./instances/T2_300_1000_0.mps.gz T2_300_1000_0 721.0 736.0 736.0
 
   instances-batch-2:
     runs-on: ubuntu-20.04
@@ -115,50 +145,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on gen_ip_076
-        run:  ./bin/c-interface-solver ./instances/gen_ip_076.mps.gz gen_ip_076 -6023.494884167268 -5949.819852651218 -5949.3635881
+      - name: test on nsa
+        run:  ./bin/c-interface-solver ./instances/nsa.mps.gz 91.44793960908102 120.0 120.0 True
 
-      - name: test on gsvm2rl3
-        run:  ./bin/c-interface-solver ./instances/gsvm2rl3.mps.gz gsvm2rl3 0.012000000000000012 0.3365275339619651 0.3365275339619651
 
-      - name: test on nh97_tension
-        run:  ./bin/c-interface-solver ./instances/nh97_tension.mps.gz nh97_tension 1414.0 1418.0 1418.0
+      - name: test on blend2
+        run:  ./bin/c-interface-solver ./instances/blend2.mps.gz 6.915675114009085 7.598984999999999 7.598984999999999 True
 
-      - name: test on robot_sch_syn_plain_4_100_1328_0.1#1
-        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.1#1.mps.gz robot_sch_syn_plain_4_100_1328_0.1#1 45.97992 45.97992 45.97992
 
-      - name: test on neos-827175
-        run:  ./bin/c-interface-solver ./instances/neos-827175.mps.gz neos-827175 112.00152 112.00152 112.00152
+      - name: test on neos-5075914-elvire
+        run:  ./bin/c-interface-solver ./instances/neos-5075914-elvire.mps.gz 277.3418879028853 323.8387966855066 323.8387966855066 True
 
-      - name: test on pp08aCUTS
-        run:  ./bin/c-interface-solver ./instances/pp08aCUTS.mps.gz pp08aCUTS 5480.606156321966 7350.0 7350.0
 
-      - name: test on leo2
-        run:  ./bin/c-interface-solver ./instances/leo2.mps.gz leo2 386421293.20891905 404077441.1199999 404077441.1199999
+      - name: test on e20100
+        run:  ./bin/c-interface-solver ./instances/e20100.mps.gz 8359.582040205076 8436.0 8436.0 True
 
-      - name: test on neos-3610051-istra
-        run:  ./bin/c-interface-solver ./instances/neos-3610051-istra.mps.gz neos-3610051-istra 44.55531250000001 49.0 49.0
 
-      - name: test on neos-1595230
-        run:  ./bin/c-interface-solver ./instances/neos-1595230.mps.gz neos-1595230 2.692307692307693 9.0 9.0
+      - name: test on supportcase14
+        run:  ./bin/c-interface-solver ./instances/supportcase14.mps.gz 272.0000000000001 288.0 288.0 True
 
-      - name: test on ns1766074
-        run:  ./bin/c-interface-solver ./instances/ns1766074.mps.gz ns1766074 5833.799999999998 inf inf
 
-      - name: test on qap10
-        run:  ./bin/c-interface-solver ./instances/qap10.mps.gz qap10 332.56622765365717 340.0 340.0
+      - name: test on bell5
+        run:  ./bin/c-interface-solver ./instances/bell5.mps.gz 8608417.946508028 8966406.491519999 8966406.491519999 True
 
-      - name: test on traininstance2
-        run:  ./bin/c-interface-solver ./instances/traininstance2.mps.gz traininstance2 0.0 71820.0 71820.0
 
-      - name: test on khb05250
-        run:  ./bin/c-interface-solver ./instances/khb05250.mps.gz khb05250 95919464.0 106933275.6029085 106940226.0
+      - name: test on fastxgemm-n2r6s0t2
+        run:  ./bin/c-interface-solver ./instances/fastxgemm-n2r6s0t2.mps.gz 27.0 230.0 230.0 True
 
-      - name: test on gen_ip_046
-        run:  ./bin/c-interface-solver ./instances/gen_ip_046.mps.gz gen_ip_046 8295.854463356625 8440.742055285085 8440.9289693434
 
-      - name: test on dfn-gwin-UUM
-        run:  ./bin/c-interface-solver ./instances/dfn-gwin-UUM.mps.gz dfn-gwin-UUM 27467.257234726694 38752.0 38752.0
+      - name: test on a05100
+        run:  ./bin/c-interface-solver ./instances/a05100.mps.gz 1697.7272727272727 1698.0 1698.0 True
+
+
+      - name: test on layer4
+        run:  ./bin/c-interface-solver ./instances/layer4.mps.gz -3455673656.974293 -2272649996.0 -2272649996.0 True
+
+
+      - name: test on rmatr100-p10
+        run:  ./bin/c-interface-solver ./instances/rmatr100-p10.mps.gz 360.59330751695734 423.0 423.0 True
+
+
+      - name: test on neos-4333596-skien
+        run:  ./bin/c-interface-solver ./instances/neos-4333596-skien.mps.gz -14653956.914930066 -14612131.563235108 -14610731.0 True
+
+
+      - name: test on enlight14
+        run:  ./bin/c-interface-solver ./instances/enlight14.mps.gz 0.0 inf inf False
+
+
+      - name: test on berlin_5_8_0
+        run:  ./bin/c-interface-solver ./instances/berlin_5_8_0.mps.gz 52.0 62.0 62.0 True
+
+
+      - name: test on mas74
+        run:  ./bin/c-interface-solver ./instances/mas74.mps.gz 10482.795280331206 11801.185728999995 11801.185728999995 True
+
+
+      - name: test on neos-905856
+        run:  ./bin/c-interface-solver ./instances/neos-905856.mps.gz -8.0 -6.0 -6.0 True
+
 
   instances-batch-3:
     runs-on: ubuntu-20.04
@@ -166,50 +211,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on set1ch
-        run:  ./bin/c-interface-solver ./instances/set1ch.mps.gz set1ch 32007.729870234445 54537.75 54537.75
+      - name: test on assign1-5-8
+        run:  ./bin/c-interface-solver ./instances/assign1-5-8.mps.gz 183.36255497382194 212.0 212.0 True
+
+
+      - name: test on gmu-35-50
+        run:  ./bin/c-interface-solver ./instances/gmu-35-50.mps.gz -2608070.315743008 -2608039.358722396 -2607849.2281 True
+
+
+      - name: test on pg5_34
+        run:  ./bin/c-interface-solver ./instances/pg5_34.mps.gz -16646.586017379595 -14339.353446926209 -14339.353446926209 True
+
+
+      - name: test on stein45
+        run:  ./bin/c-interface-solver ./instances/stein45.mps.gz 22.0 30.0 30.0 True
+
+
+      - name: test on traininstance2
+        run:  ./bin/c-interface-solver ./instances/traininstance2.mps.gz 0.0 71820.0 71820.0 True
+
+
+      - name: test on neos-1620807
+        run:  ./bin/c-interface-solver ./instances/neos-1620807.mps.gz 1.0 6.0 6.0 True
+
+
+      - name: test on robot_sch_syn_plain_4_100_1328_0.01#1
+        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.01#1.mps.gz 45.97992 45.97992 45.97992 True
+
+
+      - name: test on qnet1_o
+        run:  ./bin/c-interface-solver ./instances/qnet1_o.mps.gz 12095.57166666667 16029.692680999999 16029.692680999999 True
+
+
+      - name: test on neos-3530905-gaula
+        run:  ./bin/c-interface-solver ./instances/neos-3530905-gaula.mps.gz 150.65359999999998 159.0 159.0 True
+
+
+      - name: test on neos-1456979
+        run:  ./bin/c-interface-solver ./instances/neos-1456979.mps.gz 154.0 176.0 176.0 True
+
+
+      - name: test on gen_ip_050
+        run:  ./bin/c-interface-solver ./instances/gen_ip_050.mps.gz -5280.8518341124345 -5259.9563650858 -5259.63250196 True
+
+
+      - name: test on gr4x6
+        run:  ./bin/c-interface-solver ./instances/gr4x6.mps.gz 185.55 202.35 202.35 True
+
+
+      - name: test on swath3
+        run:  ./bin/c-interface-solver ./instances/swath3.mps.gz 334.49685810000005 397.7612831738603 397.7612831738603 True
+
 
       - name: test on gen_ip_068
-        run:  ./bin/c-interface-solver ./instances/gen_ip_068.mps.gz gen_ip_068 -5559.429150371546 -5509.134085691299 -5509.134085691299
+        run:  ./bin/c-interface-solver ./instances/gen_ip_068.mps.gz -5559.429150371546 -5509.134085691299 -5509.134085691299 True
 
-      - name: test on draw-gemcutter
-        run:  ./bin/c-interface-solver ./instances/draw-gemcutter.mps.gz draw-gemcutter 1340.0 1621.0 1621.0
 
-      - name: test on gen_ip_034
-        run:  ./bin/c-interface-solver ./instances/gen_ip_034.mps.gz gen_ip_034 -33249.75691978972 -33095.94140256082 -33093.53307157
+      - name: test on gen_ip_058
+        run:  ./bin/c-interface-solver ./instances/gen_ip_058.mps.gz -6605.220638380949 -6558.264577358545 -6558.085425800001 True
 
-      - name: test on opt1217
-        run:  ./bin/c-interface-solver ./instances/opt1217.mps.gz opt1217 -20.021390374331553 -16.0 -16.0
-
-      - name: test on mas76
-        run:  ./bin/c-interface-solver ./instances/mas76.mps.gz mas76 38893.90364052266 40005.054142 40005.054142
-
-      - name: test on n5-3
-        run:  ./bin/c-interface-solver ./instances/n5-3.mps.gz n5-3 2883.8235294117653 8104.999999999802 8104.999999999802
-
-      - name: test on gen_ip_052
-        run:  ./bin/c-interface-solver ./instances/gen_ip_052.mps.gz gen_ip_052 -2960.9376457649187 -2909.9308171600005 -2909.9308171599996
-
-      - name: test on noswot
-        run:  ./bin/c-interface-solver ./instances/noswot.mps.gz noswot -42.99999999999999 -41.0 -41.0
-
-      - name: test on roll3000
-        run:  ./bin/c-interface-solver ./instances/roll3000.mps.gz roll3000 11097.127676855102 12890.0 12890.0
-
-      - name: test on gen_ip_071
-        run:  ./bin/c-interface-solver ./instances/gen_ip_071.mps.gz gen_ip_071 2218.337478908916 2240.3709167677303 2240.4213373348
-
-      - name: test on graphdraw-gemcutter
-        run:  ./bin/c-interface-solver ./instances/graphdraw-gemcutter.mps.gz graphdraw-gemcutter 4310.0 7118.5 7118.5
-
-      - name: test on neos17
-        run:  ./bin/c-interface-solver ./instances/neos17.mps.gz neos17 0.0006814985014984903 0.15000257742257736 0.15000257742257736
-
-      - name: test on rout
-        run:  ./bin/c-interface-solver ./instances/rout.mps.gz rout 981.8642857142854 1077.5600000000002 1077.5600000000002
-
-      - name: test on h80x6320d
-        run:  ./bin/c-interface-solver ./instances/h80x6320d.mps.gz h80x6320d 5325.160104434895 6382.099047455037 6382.099047455037
 
   instances-batch-4:
     runs-on: ubuntu-20.04
@@ -217,50 +277,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on modglob
-        run:  ./bin/c-interface-solver ./instances/modglob.mps.gz modglob 20430947.618853647 20739478.23711925 20740508.08630824
+      - name: test on irp
+        run:  ./bin/c-interface-solver ./instances/irp.mps.gz 12123.530222333333 12159.409774000002 12159.492836 True
 
-      - name: test on neos-5192052-neckar
-        run:  ./bin/c-interface-solver ./instances/neos-5192052-neckar.mps.gz neos-5192052-neckar -11980000.0 -11670000.0 -11670000.0
 
-      - name: test on j3050_8
-        run:  ./bin/c-interface-solver ./instances/j3050_8.mps.gz j3050_8 0.0 1.0 1.0
+      - name: test on ic97_tension
+        run:  ./bin/c-interface-solver ./instances/ic97_tension.mps.gz 3892.0 3942.0 3942.0 True
 
-      - name: test on mushroom-best
-        run:  ./bin/c-interface-solver ./instances/mushroom-best.mps.gz mushroom-best 1.2682926829268286e-05 0.05533375492280658 0.05533375492280658
 
-      - name: test on supportcase14
-        run:  ./bin/c-interface-solver ./instances/supportcase14.mps.gz supportcase14 272.0000000000001 288.0 288.0
+      - name: test on neos-709469
+        run:  ./bin/c-interface-solver ./instances/neos-709469.mps.gz 493.16000000000014 493.15999999999997 493.15999999999997 True
 
-      - name: test on pg
-        run:  ./bin/c-interface-solver ./instances/pg.mps.gz pg -11824.65738155926 -8674.342607117025 -8674.342607117025
 
-      - name: test on layer
-        run:  ./bin/c-interface-solver ./instances/layer.mps.gz layer -22580999.99999999 -13855500.0 -13855500.0
+      - name: test on gen_ip_072
+        run:  ./bin/c-interface-solver ./instances/gen_ip_072.mps.gz 3021.9840408787945 3086.748486173573 3087.006998152 True
 
-      - name: test on stein45
-        run:  ./bin/c-interface-solver ./instances/stein45.mps.gz stein45 22.0 30.0 30.0
 
-      - name: test on m100n500k4r1
-        run:  ./bin/c-interface-solver ./instances/m100n500k4r1.mps.gz m100n500k4r1 -25.000000000000014 -25.0 -25.0
+      - name: test on pp08aCUTS
+        run:  ./bin/c-interface-solver ./instances/pp08aCUTS.mps.gz 5480.606156321966 7350.0 7350.0 True
 
-      - name: test on neos-1456979
-        run:  ./bin/c-interface-solver ./instances/neos-1456979.mps.gz neos-1456979 154.0 176.0 176.0
 
-      - name: test on layer2
-        run:  ./bin/c-interface-solver ./instances/layer2.mps.gz layer2 -22580999.99982749 -13855499.9998 -13855499.9998
+      - name: test on vpm1
+        run:  ./bin/c-interface-solver ./instances/vpm1.mps.gz 15.416666666666666 20.0 20.0 True
 
-      - name: test on cost266-UUE
-        run:  ./bin/c-interface-solver ./instances/cost266-UUE.mps.gz cost266-UUE 20161515.663928583 25148940.559999935 25148940.560000002
+
+      - name: test on h80x6320d
+        run:  ./bin/c-interface-solver ./instances/h80x6320d.mps.gz 5325.160104434895 6382.099047455037 6382.099047455037 True
+
 
       - name: test on glass4
-        run:  ./bin/c-interface-solver ./instances/glass4.mps.gz glass4 800002400.0 1199990422.261414 1200012600.0
+        run:  ./bin/c-interface-solver ./instances/glass4.mps.gz 800002400.0 1199990422.261414 1200012600.0 True
 
-      - name: test on neos-1437164
-        run:  ./bin/c-interface-solver ./instances/neos-1437164.mps.gz neos-1437164 7.629705882352937 8.0 8.0
 
-      - name: test on gen_ip_027
-        run:  ./bin/c-interface-solver ./instances/gen_ip_027.mps.gz gen_ip_027 -4338.606963602783 -4305.80580172 -4305.80580172
+      - name: test on blp-ic98
+        run:  ./bin/c-interface-solver ./instances/blp-ic98.mps.gz 4331.168352598078 4491.447584 4491.447584 True
+
+
+      - name: test on supportcase26
+        run:  ./bin/c-interface-solver ./instances/supportcase26.mps.gz 1288.1021611356975 1745.124182346033 1745.124182346033 True
+
+
+      - name: test on csched007
+        run:  ./bin/c-interface-solver ./instances/csched007.mps.gz 269.2515873015872 351.0 351.0 True
+
+
+      - name: test on leo2
+        run:  ./bin/c-interface-solver ./instances/leo2.mps.gz 386421293.20891905 404077441.1199999 404077441.1199999 True
+
+
+      - name: test on gesa2-o
+        run:  ./bin/c-interface-solver ./instances/gesa2-o.mps.gz 25476489.678122617 25779682.628816374 25780204.239210248 True
+
+
+      - name: test on gt2
+        run:  ./bin/c-interface-solver ./instances/gt2.mps.gz 13460.233074411897 21166.0 21166.0 True
+
+
+      - name: test on tbfp-network
+        run:  ./bin/c-interface-solver ./instances/tbfp-network.mps.gz 23.261535493717908 24.16319444449999 24.1631944445 True
+
 
   instances-batch-5:
     runs-on: ubuntu-20.04
@@ -268,50 +343,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on layer4
-        run:  ./bin/c-interface-solver ./instances/layer4.mps.gz layer4 -3455673656.974293 -2272649996.0 -2272649996.0
+      - name: test on gen
+        run:  ./bin/c-interface-solver ./instances/gen.mps.gz 112130.04066386049 112313.36271799999 112313.36271799999 True
 
-      - name: test on gen_ip_042
-        run:  ./bin/c-interface-solver ./instances/gen_ip_042.mps.gz gen_ip_042 -10212.62414830849 -10107.062100160307 -10106.158875000001
 
-      - name: test on gen_ip_003
-        run:  ./bin/c-interface-solver ./instances/gen_ip_003.mps.gz gen_ip_003 -2617.390732677057 -2578.458966754 -2578.458966754
+      - name: test on supportcase18
+        run:  ./bin/c-interface-solver ./instances/supportcase18.mps.gz 47.18666666666668 48.0 48.0 True
 
-      - name: test on milo-v12-6-r2-40-1
-        run:  ./bin/c-interface-solver ./instances/milo-v12-6-r2-40-1.mps.gz milo-v12-6-r2-40-1 205532.32226507572 326481.14282798977 326481.14282798977
+
+      - name: test on gen_ip_028
+        run:  ./bin/c-interface-solver ./instances/gen_ip_028.mps.gz -15586.545705640205 -15531.976195375732 -15530.7387333 True
+
 
       - name: test on gen_ip_066
-        run:  ./bin/c-interface-solver ./instances/gen_ip_066.mps.gz gen_ip_066 -2332.006389587271 -2303.3866479280928 -2303.271029303
+        run:  ./bin/c-interface-solver ./instances/gen_ip_066.mps.gz -2332.006389587271 -2303.3866479280928 -2303.271029303 True
 
-      - name: test on gen_ip_032
-        run:  ./bin/c-interface-solver ./instances/gen_ip_032.mps.gz gen_ip_032 2213.6620271493407 2298.692666604 2298.692666604
-
-      - name: test on eil33-2
-        run:  ./bin/c-interface-solver ./instances/eil33-2.mps.gz eil33-2 811.2789961228073 934.007916 934.007916
-
-      - name: test on neos-5140963-mincio
-        run:  ./bin/c-interface-solver ./instances/neos-5140963-mincio.mps.gz neos-5140963-mincio 8877.0 14393.0 14393.0
 
       - name: test on pigeon-08
-        run:  ./bin/c-interface-solver ./instances/pigeon-08.mps.gz pigeon-08 -8000.0 -7000.0 -7000.0
+        run:  ./bin/c-interface-solver ./instances/pigeon-08.mps.gz -8000.0 -7000.0 -7000.0 True
 
-      - name: test on f2gap201600
-        run:  ./bin/c-interface-solver ./instances/f2gap201600.mps.gz f2gap201600 76429.86229621104 76449.0 76453.0
 
-      - name: test on gen_ip_005
-        run:  ./bin/c-interface-solver ./instances/gen_ip_005.mps.gz gen_ip_005 -8154.836920304866 -8084.442129889753 -8084.0210693
+      - name: test on neos-827175
+        run:  ./bin/c-interface-solver ./instances/neos-827175.mps.gz 112.00152 112.00152 112.00152 True
 
-      - name: test on misc03
-        run:  ./bin/c-interface-solver ./instances/misc03.mps.gz misc03 1910.0 3359.999999999999 3359.999999999999
 
-      - name: test on gt2
-        run:  ./bin/c-interface-solver ./instances/gt2.mps.gz gt2 13460.233074411897 21166.0 21166.0
+      - name: test on eilB76
+        run:  ./bin/c-interface-solver ./instances/eilB76.mps.gz 1021.1851707445117 1066.0947651562503 1066.185428 True
 
-      - name: test on gen-ip036
-        run:  ./bin/c-interface-solver ./instances/gen-ip036.mps.gz gen-ip036 -4632.298152873464 -4606.92327131171 -4606.6796098376
 
-      - name: test on e20100
-        run:  ./bin/c-interface-solver ./instances/e20100.mps.gz e20100 8359.582040205076 8436.0 8436.0
+      - name: test on drayage-100-23
+        run:  ./bin/c-interface-solver ./instances/drayage-100-23.mps.gz 11714.141979217546 103333.87407302856 103333.87407302856 True
+
+
+      - name: test on eilA76
+        run:  ./bin/c-interface-solver ./instances/eilA76.mps.gz 828.7084130540892 922.018268 922.018268 True
+
+
+      - name: test on bienst1
+        run:  ./bin/c-interface-solver ./instances/bienst1.mps.gz 11.724137931034482 46.75 46.75 True
+
+
+      - name: test on mc11
+        run:  ./bin/c-interface-solver ./instances/mc11.mps.gz 608.8443396226415 11688.0 11689.0 True
+
+
+      - name: test on ns1208400
+        run:  ./bin/c-interface-solver ./instances/ns1208400.mps.gz 0.0 2.0 2.0 True
+
+
+      - name: test on nexp-50-20-4-2
+        run:  ./bin/c-interface-solver ./instances/nexp-50-20-4-2.mps.gz 49.090909090909086 71.0 71.0 True
+
+
+      - name: test on gen_ip_035
+        run:  ./bin/c-interface-solver ./instances/gen_ip_035.mps.gz -9091.735513807036 -8995.067662467462 -8994.48425448 True
+
+
+      - name: test on supportcase40
+        run:  ./bin/c-interface-solver ./instances/supportcase40.mps.gz 22536.483378767967 24256.17063891889 24256.312289834023 True
+
 
   instances-batch-6:
     runs-on: ubuntu-20.04
@@ -319,50 +409,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on gen_ip_026
-        run:  ./bin/c-interface-solver ./instances/gen_ip_026.mps.gz gen_ip_026 -22183.636163396615 -22096.116399468843 -22094.1361044
+      - name: test on nursesched-sprint02
+        run:  ./bin/c-interface-solver ./instances/nursesched-sprint02.mps.gz 54.41666666666666 58.0 58.0 True
 
-      - name: test on mod008
-        run:  ./bin/c-interface-solver ./instances/mod008.mps.gz mod008 290.9310727149688 307.0 307.0
 
-      - name: test on ran14x18-disj-8
-        run:  ./bin/c-interface-solver ./instances/ran14x18-disj-8.mps.gz ran14x18-disj-8 3444.4210654085387 3712.0000001071076 3712.0000001071076
+      - name: test on neos-1442119
+        run:  ./bin/c-interface-solver ./instances/neos-1442119.mps.gz -182.0 -181.0 -181.0 True
 
-      - name: test on a10100
-        run:  ./bin/c-interface-solver ./instances/a10100.mps.gz a10100 1358.556923076923 1360.0 1360.0
 
-      - name: test on ns1208400
-        run:  ./bin/c-interface-solver ./instances/ns1208400.mps.gz ns1208400 0.0 2.0 2.0
+      - name: test on ej
+        run:  ./bin/c-interface-solver ./instances/ej.mps.gz 1.0 25508.0 25508.0 True
 
-      - name: test on gen_ip_037
-        run:  ./bin/c-interface-solver ./instances/gen_ip_037.mps.gz gen_ip_037 -760.1174661342742 -675.379792986 -675.379792986
 
-      - name: test on gen_ip_029
-        run:  ./bin/c-interface-solver ./instances/gen_ip_029.mps.gz gen_ip_029 -2963.635371957432 -2796.6145299640007 -2796.6145299639998
+      - name: test on dcmulti
+        run:  ./bin/c-interface-solver ./instances/dcmulti.mps.gz 183975.53969317526 188170.96253859182 188186.5 True
 
-      - name: test on gen_ip_025
-        run:  ./bin/c-interface-solver ./instances/gen_ip_025.mps.gz gen_ip_025 -691.0942856840405 -649.2587612337999 -649.2587612337999
 
-      - name: test on pp08a
-        run:  ./bin/c-interface-solver ./instances/pp08a.mps.gz pp08a 2748.345238095238 7349.99999999997 7349.99999999997
+      - name: test on drayage-25-23
+        run:  ./bin/c-interface-solver ./instances/drayage-25-23.mps.gz 11714.141979217544 101282.64701843262 101282.64701843262 True
 
-      - name: test on p0033
-        run:  ./bin/c-interface-solver ./instances/p0033.mps.gz p0033 2520.5717391304347 3089.0 3089.0
+
+      - name: test on binkar10_1
+        run:  ./bin/c-interface-solver ./instances/binkar10_1.mps.gz 6637.188026943757 6742.200023999466 6742.200024000001 True
+
+
+      - name: test on opt1217
+        run:  ./bin/c-interface-solver ./instances/opt1217.mps.gz -20.021390374331553 -16.0 -16.0 True
+
 
       - name: test on neos-825075
-        run:  ./bin/c-interface-solver ./instances/neos-825075.mps.gz neos-825075 -292.0 -272.0 -272.0
+        run:  ./bin/c-interface-solver ./instances/neos-825075.mps.gz -292.0 -272.0 -272.0 True
 
-      - name: test on misc06
-        run:  ./bin/c-interface-solver ./instances/misc06.mps.gz misc06 12841.689392283552 12850.073741146787 12850.86073738254
 
-      - name: test on traininstance6
-        run:  ./bin/c-interface-solver ./instances/traininstance6.mps.gz traininstance6 0.0 28289.99999999927 28290.0
+      - name: test on mushroom-best
+        run:  ./bin/c-interface-solver ./instances/mushroom-best.mps.gz 1.2682926829268286e-05 0.05533375492280658 0.05533375492280658 True
 
-      - name: test on ic97_tension
-        run:  ./bin/c-interface-solver ./instances/ic97_tension.mps.gz ic97_tension 3892.0 3942.0 3942.0
 
-      - name: test on seymour1
-        run:  ./bin/c-interface-solver ./instances/seymour1.mps.gz seymour1 403.84647412519274 410.7637013945249 410.76370139452496
+      - name: test on neos-538867
+        run:  ./bin/c-interface-solver ./instances/neos-538867.mps.gz 32.0 122.0 122.0 True
+
+
+      - name: test on p0201
+        run:  ./bin/c-interface-solver ./instances/p0201.mps.gz 6875.0 7615.0 7615.0 True
+
+
+      - name: test on bppc8-09
+        run:  ./bin/c-interface-solver ./instances/bppc8-09.mps.gz 444.4360465116279 472.0 472.0 True
+
+
+      - name: test on neos-1437164
+        run:  ./bin/c-interface-solver ./instances/neos-1437164.mps.gz 7.629705882352937 8.0 8.0 True
+
+
+      - name: test on gen-ip002
+        run:  ./bin/c-interface-solver ./instances/gen-ip002.mps.gz -4840.541961300888 -4784.0221839859 -4783.7333916 True
+
+
+      - name: test on neos-1582420
+        run:  ./bin/c-interface-solver ./instances/neos-1582420.mps.gz 87.5761183958495 91.0 91.0 True
+
 
   instances-batch-7:
     runs-on: ubuntu-20.04
@@ -370,50 +475,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on robot_sch_syn_plain_4_100_1328_0.05#1
-        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.05#1.mps.gz robot_sch_syn_plain_4_100_1328_0.05#1 45.97992 45.97992 45.97992
+      - name: test on f2gap801600
+        run:  ./bin/c-interface-solver ./instances/f2gap801600.mps.gz 86570.12086656285 86676.0 86679.0 True
 
-      - name: test on sp150x300d
-        run:  ./bin/c-interface-solver ./instances/sp150x300d.mps.gz sp150x300d 4.891111839947526 69.0 69.0
 
-      - name: test on csched010
-        run:  ./bin/c-interface-solver ./instances/csched010.mps.gz csched010 332.4227272727273 408.0 408.0
+      - name: test on swath1
+        run:  ./bin/c-interface-solver ./instances/swath1.mps.gz 334.49685810000005 379.0712957499999 379.0712957499999 True
+
+
+      - name: test on nh97_potential
+        run:  ./bin/c-interface-solver ./instances/nh97_potential.mps.gz 1394.0 1418.0 1418.0 True
+
+
+      - name: test on graphdraw-gemcutter
+        run:  ./bin/c-interface-solver ./instances/graphdraw-gemcutter.mps.gz 4310.0 7118.5 7118.5 True
+
+
+      - name: test on neos-3083819-nubu
+        run:  ./bin/c-interface-solver ./instances/neos-3083819-nubu.mps.gz 6290575.552807326 6307996.0 6307996.0 True
+
 
       - name: test on wachplan
-        run:  ./bin/c-interface-solver ./instances/wachplan.mps.gz wachplan -9.0 -8.0 -8.0
+        run:  ./bin/c-interface-solver ./instances/wachplan.mps.gz -9.0 -8.0 -8.0 True
 
-      - name: test on assign1-5-8
-        run:  ./bin/c-interface-solver ./instances/assign1-5-8.mps.gz assign1-5-8 183.36255497382194 212.0 212.0
+
+      - name: test on peg-solitaire-a3
+        run:  ./bin/c-interface-solver ./instances/peg-solitaire-a3.mps.gz 0.9999999999999868 1.0 1.0 True
+
+
+      - name: test on gen_ip_031
+        run:  ./bin/c-interface-solver ./instances/gen_ip_031.mps.gz -3853.7694434557384 -3831.3053682222926 -3831.0625495000004 True
+
+
+      - name: test on sp150x300d
+        run:  ./bin/c-interface-solver ./instances/sp150x300d.mps.gz 4.891111839947526 69.0 69.0 True
+
 
       - name: test on fiball
-        run:  ./bin/c-interface-solver ./instances/fiball.mps.gz fiball 137.06916764361077 138.0 138.0
+        run:  ./bin/c-interface-solver ./instances/fiball.mps.gz 137.06916764361077 138.0 138.0 True
 
-      - name: test on haprp
-        run:  ./bin/c-interface-solver ./instances/haprp.mps.gz haprp 3665963.213505806 3673280.6816849993 3673280.681685
 
-      - name: test on gmu-35-40
-        run:  ./bin/c-interface-solver ./instances/gmu-35-40.mps.gz gmu-35-40 -2406943.5563428816 -2406796.023892996 -2406607.9743
+      - name: test on leo1
+        run:  ./bin/c-interface-solver ./instances/leo1.mps.gz 388573315.50960773 404208920.2910912 404227536.16 True
 
-      - name: test on markshare_4_0
-        run:  ./bin/c-interface-solver ./instances/markshare_4_0.mps.gz markshare_4_0 0.0 1.0 1.0
 
-      - name: test on berlin_5_8_0
-        run:  ./bin/c-interface-solver ./instances/berlin_5_8_0.mps.gz berlin_5_8_0 52.0 62.0 62.0
+      - name: test on neos-3611689-kaihu
+        run:  ./bin/c-interface-solver ./instances/neos-3611689-kaihu.mps.gz 100.87875000000001 119.0 119.0 True
 
-      - name: test on ej
-        run:  ./bin/c-interface-solver ./instances/ej.mps.gz ej 1.0 25508.0 25508.0
 
-      - name: test on supportcase26
-        run:  ./bin/c-interface-solver ./instances/supportcase26.mps.gz supportcase26 1288.1021611356975 1745.124182346033 1745.124182346033
+      - name: test on neos5
+        run:  ./bin/c-interface-solver ./instances/neos5.mps.gz 13.0 15.0 15.0 True
 
-      - name: test on neos-1442119
-        run:  ./bin/c-interface-solver ./instances/neos-1442119.mps.gz neos-1442119 -182.0 -181.0 -181.0
 
-      - name: test on neos-555927
-        run:  ./bin/c-interface-solver ./instances/neos-555927.mps.gz neos-555927 608345.7084502499 690000.0 690000.0
+      - name: test on neos2
+        run:  ./bin/c-interface-solver ./instances/neos2.mps.gz -4717.666848100766 454.864697035006 454.864697035006 True
 
-      - name: test on gen-ip002
-        run:  ./bin/c-interface-solver ./instances/gen-ip002.mps.gz gen-ip002 -4840.541961300888 -4784.0221839859 -4783.7333916
+
+      - name: test on dfn-gwin-UUM
+        run:  ./bin/c-interface-solver ./instances/dfn-gwin-UUM.mps.gz 27467.257234726694 38752.0 38752.0 True
+
 
   instances-batch-8:
     runs-on: ubuntu-20.04
@@ -421,50 +541,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on f2gap40400
-        run:  ./bin/c-interface-solver ./instances/f2gap40400.mps.gz f2gap40400 20650.898153963255 20772.0 20772.0
+      - name: test on gen_ip_038
+        run:  ./bin/c-interface-solver ./instances/gen_ip_038.mps.gz -8862.40393395416 -8756.485905599999 -8756.485905599999 True
 
-      - name: test on f2gap401600
-        run:  ./bin/c-interface-solver ./instances/f2gap401600.mps.gz f2gap401600 82274.2374341957 82307.0 82307.0
 
-      - name: test on neos-3611689-kaihu
-        run:  ./bin/c-interface-solver ./instances/neos-3611689-kaihu.mps.gz neos-3611689-kaihu 100.87875000000001 119.0 119.0
+      - name: test on gen_ip_056
+        run:  ./bin/c-interface-solver ./instances/gen_ip_056.mps.gz 5257.397105048657 5355.203120203918 5355.6844802645 True
 
-      - name: test on supportcase16
-        run:  ./bin/c-interface-solver ./instances/supportcase16.mps.gz supportcase16 272.0000000000001 288.0 288.0
 
-      - name: test on neos-1441553
-        run:  ./bin/c-interface-solver ./instances/neos-1441553.mps.gz neos-1441553 7.6348039215686265 8.0 8.0
+      - name: test on neos-1281048
+        run:  ./bin/c-interface-solver ./instances/neos-1281048.mps.gz 450.00000000000006 601.0 601.0 True
 
-      - name: test on timtab1CUTS
-        run:  ./bin/c-interface-solver ./instances/timtab1CUTS.mps.gz timtab1CUTS 613590.0954260388 764771.99999978 764771.99999978
 
-      - name: test on neos-538867
-        run:  ./bin/c-interface-solver ./instances/neos-538867.mps.gz neos-538867 32.0 122.0 122.0
+      - name: test on neos-555927
+        run:  ./bin/c-interface-solver ./instances/neos-555927.mps.gz 608345.7084502499 690000.0 690000.0 True
 
-      - name: test on neos-1396125
-        run:  ./bin/c-interface-solver ./instances/neos-1396125.mps.gz neos-1396125 388.55239976630634 3000.040740741066 3000.0472222226
 
-      - name: test on nug08
-        run:  ./bin/c-interface-solver ./instances/nug08.mps.gz nug08 203.50000000000873 214.0 214.0
+      - name: test on j3050_8
+        run:  ./bin/c-interface-solver ./instances/j3050_8.mps.gz 0.0 1.0 1.0 True
 
-      - name: test on neos-5107597-kakapo
-        run:  ./bin/c-interface-solver ./instances/neos-5107597-kakapo.mps.gz neos-5107597-kakapo 0.0 3644.9999999999964 3644.9999999999964
 
-      - name: test on eilA76
-        run:  ./bin/c-interface-solver ./instances/eilA76.mps.gz eilA76 828.7084130540892 922.018268 922.018268
+      - name: test on misc07
+        run:  ./bin/c-interface-solver ./instances/misc07.mps.gz 1415.0 2810.0 2810.0 True
+
 
       - name: test on neos859080
-        run:  ./bin/c-interface-solver ./instances/neos859080.mps.gz neos859080 1.0 inf inf
+        run:  ./bin/c-interface-solver ./instances/neos859080.mps.gz 1.0 inf inf False
 
-      - name: test on neos-3216931-puriri
-        run:  ./bin/c-interface-solver ./instances/neos-3216931-puriri.mps.gz neos-3216931-puriri 58817.35306581276 71320.0 71320.0
 
-      - name: test on nursesched-sprint02
-        run:  ./bin/c-interface-solver ./instances/nursesched-sprint02.mps.gz nursesched-sprint02 54.41666666666666 58.0 58.0
+      - name: test on fhnw-binpack4-48
+        run:  ./bin/c-interface-solver ./instances/fhnw-binpack4-48.mps.gz 0.0 0.0 0.0 True
 
-      - name: test on blp-ic98
-        run:  ./bin/c-interface-solver ./instances/blp-ic98.mps.gz blp-ic98 4331.168352598078 4491.447584 4491.447584
+
+      - name: test on mzzv11
+        run:  ./bin/c-interface-solver ./instances/mzzv11.mps.gz -22945.2396313364 -21718.0 -21718.0 True
+
+
+      - name: test on gen-ip054
+        run:  ./bin/c-interface-solver ./instances/gen-ip054.mps.gz 6765.209042644034 6840.387854225967 6840.965641792 True
+
+
+      - name: test on gen_ip_076
+        run:  ./bin/c-interface-solver ./instances/gen_ip_076.mps.gz -6023.494884167268 -5949.819852651218 -5949.3635881 True
+
+
+      - name: test on neos-5140963-mincio
+        run:  ./bin/c-interface-solver ./instances/neos-5140963-mincio.mps.gz 8877.0 14393.0 14393.0 True
+
+
+      - name: test on ran12x21
+        run:  ./bin/c-interface-solver ./instances/ran12x21.mps.gz 3157.377442025726 3664.0000000000177 3664.0000000000177 True
+
+
+      - name: test on neos16
+        run:  ./bin/c-interface-solver ./instances/neos16.mps.gz 429.0 446.0 446.0 True
+
+
+      - name: test on gen_ip_077
+        run:  ./bin/c-interface-solver ./instances/gen_ip_077.mps.gz -5931.32331817741 -5863.642909193451 -5863.361334900001 True
+
 
   instances-batch-9:
     runs-on: ubuntu-20.04
@@ -472,50 +607,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on rgn
-        run:  ./bin/c-interface-solver ./instances/rgn.mps.gz rgn 48.79999855999996 82.19998431599916 82.19998431599916
+      - name: test on rout
+        run:  ./bin/c-interface-solver ./instances/rout.mps.gz 981.8642857142854 1077.5600000000002 1077.5600000000002 True
 
-      - name: test on p0201
-        run:  ./bin/c-interface-solver ./instances/p0201.mps.gz p0201 6875.0 7615.0 7615.0
 
-      - name: test on supportcase18
-        run:  ./bin/c-interface-solver ./instances/supportcase18.mps.gz supportcase18 47.18666666666668 48.0 48.0
+      - name: test on supportcase17
+        run:  ./bin/c-interface-solver ./instances/supportcase17.mps.gz 0.0 1330.0 1330.0 True
 
-      - name: test on flugpl
-        run:  ./bin/c-interface-solver ./instances/flugpl.mps.gz flugpl 1167185.7255923203 1201500.0 1201500.0
 
-      - name: test on neos-1281048
-        run:  ./bin/c-interface-solver ./instances/neos-1281048.mps.gz neos-1281048 450.00000000000006 601.0 601.0
+      - name: test on csched010
+        run:  ./bin/c-interface-solver ./instances/csched010.mps.gz 332.4227272727273 408.0 408.0 True
 
-      - name: test on neos-3381206-awhea
-        run:  ./bin/c-interface-solver ./instances/neos-3381206-awhea.mps.gz neos-3381206-awhea 415.2399999999999 453.0 453.0
 
-      - name: test on pg5_34
-        run:  ./bin/c-interface-solver ./instances/pg5_34.mps.gz pg5_34 -16646.586017379595 -14339.353446926209 -14339.353446926209
+      - name: test on neos-3072252-nete
+        run:  ./bin/c-interface-solver ./instances/neos-3072252-nete.mps.gz 10593526.0 11806616.116549848 11807698.0 True
 
-      - name: test on compact_abz5
-        run:  ./bin/c-interface-solver ./instances/compact_abz5.mps.gz compact_abz5 859.0 1234.0 1234.0
 
-      - name: test on gen_ip_017
-        run:  ./bin/c-interface-solver ./instances/gen_ip_017.mps.gz gen_ip_017 3698.118462984541 3793.8663197680007 3793.8663197680007
+      - name: test on beasleyC3
+        run:  ./bin/c-interface-solver ./instances/beasleyC3.mps.gz 40.42682926829263 754.0 754.0 True
 
-      - name: test on timtab1
-        run:  ./bin/c-interface-solver ./instances/timtab1.mps.gz timtab1 28693.999999999996 764771.99999978 764771.99999978
 
-      - name: test on gen
-        run:  ./bin/c-interface-solver ./instances/gen.mps.gz gen 112130.04066386049 112313.36271799999 112313.36271799999
+      - name: test on m100n500k4r1
+        run:  ./bin/c-interface-solver ./instances/m100n500k4r1.mps.gz -25.000000000000014 -25.0 -25.0 True
 
-      - name: test on neos-1425699
-        run:  ./bin/c-interface-solver ./instances/neos-1425699.mps.gz neos-1425699 3175204364.635297 3179698977.0 3179698977.0
 
-      - name: test on neos-4738912-atrato
-        run:  ./bin/c-interface-solver ./instances/neos-4738912-atrato.mps.gz neos-4738912-atrato 65143485.99418829 283602751.0469233 283627956.59528
+      - name: test on gen_ip_023
+        run:  ./bin/c-interface-solver ./instances/gen_ip_023.mps.gz -6684.0117994654875 -6582.410199229517 -6582.24640714 True
 
-      - name: test on supportcase40
-        run:  ./bin/c-interface-solver ./instances/supportcase40.mps.gz supportcase40 22536.483378767967 24256.17063891889 24256.312289834023
 
-      - name: test on fhnw-binpack4-48
-        run:  ./bin/c-interface-solver ./instances/fhnw-binpack4-48.mps.gz fhnw-binpack4-48 0.0 0.0 0.0
+      - name: test on mik-250-1-100-1
+        run:  ./bin/c-interface-solver ./instances/mik-250-1-100-1.mps.gz -79842.42363461945 -66729.0 -66729.0 True
+
+
+      - name: test on gen_ip_025
+        run:  ./bin/c-interface-solver ./instances/gen_ip_025.mps.gz -691.0942856840405 -649.2587612337999 -649.2587612337999 True
+
+
+      - name: test on gen_ip_042
+        run:  ./bin/c-interface-solver ./instances/gen_ip_042.mps.gz -10212.62414830849 -10107.062100160307 -10106.158875000001 True
+
+
+      - name: test on p200x1188c
+        run:  ./bin/c-interface-solver ./instances/p200x1188c.mps.gz 5678.607088607595 15078.0 15078.0 True
+
+
+      - name: test on robot_sch_syn_plain_4_100_1328_0.05#1
+        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.05#1.mps.gz 45.97992 45.97992 45.97992 True
+
+
+      - name: test on nh97_tension
+        run:  ./bin/c-interface-solver ./instances/nh97_tension.mps.gz 1414.0 1418.0 1418.0 True
+
+
+      - name: test on f2gap401600
+        run:  ./bin/c-interface-solver ./instances/f2gap401600.mps.gz 82274.2374341957 82307.0 82307.0 True
+
+
+      - name: test on gen_ip_024
+        run:  ./bin/c-interface-solver ./instances/gen_ip_024.mps.gz -8801.481745889316 -8745.608643868829 -8745.086897019999 True
+
 
   instances-batch-10:
     runs-on: ubuntu-20.04
@@ -523,50 +673,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on enlight14
-        run:  ./bin/c-interface-solver ./instances/enlight14.mps.gz enlight14 0.0 inf inf
+      - name: test on j3014_5
+        run:  ./bin/c-interface-solver ./instances/j3014_5.mps.gz 0.0 0.0 0.0 True
 
-      - name: test on bell5
-        run:  ./bin/c-interface-solver ./instances/bell5.mps.gz bell5 8608417.946508028 8966406.491519999 8966406.491519999
 
-      - name: test on mik-250-1-100-1
-        run:  ./bin/c-interface-solver ./instances/mik-250-1-100-1.mps.gz mik-250-1-100-1 -79842.42363461945 -66729.0 -66729.0
+      - name: test on neos-3118745-obra
+        run:  ./bin/c-interface-solver ./instances/neos-3118745-obra.mps.gz 253.83333333333334 255.0 255.0 True
 
-      - name: test on mas74
-        run:  ./bin/c-interface-solver ./instances/mas74.mps.gz mas74 10482.795280331206 11801.185728999995 11801.185728999995
 
-      - name: test on neos-1620807
-        run:  ./bin/c-interface-solver ./instances/neos-1620807.mps.gz neos-1620807 1.0 6.0 6.0
+      - name: test on fixnet6
+        run:  ./bin/c-interface-solver ./instances/fixnet6.mps.gz 1200.884 3983.0 3983.0 True
 
-      - name: test on eilB76
-        run:  ./bin/c-interface-solver ./instances/eilB76.mps.gz eilB76 1021.1851707445117 1066.0947651562503 1066.185428
 
-      - name: test on ibarra
-        run:  ./bin/c-interface-solver ./instances/ibarra.mps.gz ibarra 390.61153877067596 837.63 837.63
+      - name: test on lseu
+        run:  ./bin/c-interface-solver ./instances/lseu.mps.gz 834.6823529411765 1120.0 1120.0 True
 
-      - name: test on neos-3072252-nete
-        run:  ./bin/c-interface-solver ./instances/neos-3072252-nete.mps.gz neos-3072252-nete 10593526.0 11806616.116549848 11807698.0
 
-      - name: test on gen_ip_024
-        run:  ./bin/c-interface-solver ./instances/gen_ip_024.mps.gz gen_ip_024 -8801.481745889316 -8745.608643868829 -8745.086897019999
+      - name: test on gsvm2rl3
+        run:  ./bin/c-interface-solver ./instances/gsvm2rl3.mps.gz 0.012000000000000012 0.3365275339619651 0.3365275339619651 True
 
-      - name: test on robot_sch_syn_plain_4_100_1605_0.01#0
-        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1605_0.01#0.mps.gz robot_sch_syn_plain_4_100_1605_0.01#0 40.61877299536961 41.202830000000006 41.202830000000006
 
-      - name: test on csched007
-        run:  ./bin/c-interface-solver ./instances/csched007.mps.gz csched007 269.2515873015872 351.0 351.0
+      - name: test on gesa3
+        run:  ./bin/c-interface-solver ./instances/gesa3.mps.gz 27833632.450665344 27991042.64838268 27991042.648382682 True
 
-      - name: test on neos-1582420
-        run:  ./bin/c-interface-solver ./instances/neos-1582420.mps.gz neos-1582420 87.5761183958495 91.0 91.0
 
-      - name: test on gen-ip054
-        run:  ./bin/c-interface-solver ./instances/gen-ip054.mps.gz gen-ip054 6765.209042644034 6840.387854225967 6840.965641792
+      - name: test on robot_sch_syn_plain_4_100_1328_0.1#1
+        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.1#1.mps.gz 45.97992 45.97992 45.97992 True
 
-      - name: test on mzzv11
-        run:  ./bin/c-interface-solver ./instances/mzzv11.mps.gz mzzv11 -22945.2396313364 -21718.0 -21718.0
 
-      - name: test on gen_ip_062
-        run:  ./bin/c-interface-solver ./instances/gen_ip_062.mps.gz gen_ip_062 -10526.263089095593 -10459.059434806712 -10458.071328589998
+      - name: test on momentum1
+        run:  ./bin/c-interface-solver ./instances/momentum1.mps.gz 72793.34525453381 109132.69308676905 109143.49375924861 True
+
+
+      - name: test on a10100
+        run:  ./bin/c-interface-solver ./instances/a10100.mps.gz 1358.556923076923 1360.0 1360.0 True
+
+
+      - name: test on T2_200_2000_0
+        run:  ./bin/c-interface-solver ./instances/T2_200_2000_0.mps.gz 1012.9090909090909 1043.0 1043.0 True
+
+
+      - name: test on neos-631517
+        run:  ./bin/c-interface-solver ./instances/neos-631517.mps.gz 6494999.9999359995 11489941.602695385 11490666.666634 True
+
+
+      - name: test on mtest4ma
+        run:  ./bin/c-interface-solver ./instances/mtest4ma.mps.gz 33968.065673149766 52147.99999999381 52147.999999999134 True
+
+
+      - name: test on gen_ip_041
+        run:  ./bin/c-interface-solver ./instances/gen_ip_041.mps.gz 8632.789490293586 8742.912539088928 8743.634619139 True
+
+
+      - name: test on gen_ip_017
+        run:  ./bin/c-interface-solver ./instances/gen_ip_017.mps.gz 3698.118462984541 3793.8663197680007 3793.8663197680007 True
+
+
+      - name: test on mod008
+        run:  ./bin/c-interface-solver ./instances/mod008.mps.gz 290.9310727149688 307.0 307.0 True
+
 
   instances-batch-11:
     runs-on: ubuntu-20.04
@@ -574,50 +739,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on neos-905856
-        run:  ./bin/c-interface-solver ./instances/neos-905856.mps.gz neos-905856 -8.0 -6.0 -6.0
+      - name: test on mzzv42z
+        run:  ./bin/c-interface-solver ./instances/mzzv42z.mps.gz -21622.998481242863 -20540.0 -20540.0 True
 
-      - name: test on fixnet6
-        run:  ./bin/c-interface-solver ./instances/fixnet6.mps.gz fixnet6 1200.884 3983.0 3983.0
-
-      - name: test on blend2
-        run:  ./bin/c-interface-solver ./instances/blend2.mps.gz blend2 6.915675114009085 7.598984999999999 7.598984999999999
-
-      - name: test on enlight_hard
-        run:  ./bin/c-interface-solver ./instances/enlight_hard.mps.gz enlight_hard 0.0 37.0 37.0
-
-      - name: test on gen_ip_058
-        run:  ./bin/c-interface-solver ./instances/gen_ip_058.mps.gz gen_ip_058 -6605.220638380949 -6558.264577358545 -6558.085425800001
-
-      - name: test on graphdraw-domain
-        run:  ./bin/c-interface-solver ./instances/graphdraw-domain.mps.gz graphdraw-domain 12672.0 19686.0 19686.0
-
-      - name: test on neos-1445765
-        run:  ./bin/c-interface-solver ./instances/neos-1445765.mps.gz neos-1445765 -24699.19765976532 -17783.0 -17783.0
-
-      - name: test on mik-250-20-75-4
-        run:  ./bin/c-interface-solver ./instances/mik-250-20-75-4.mps.gz mik-250-20-75-4 -61651.22709753319 -52300.99999999978 -52300.99999999978
-
-      - name: test on neos2
-        run:  ./bin/c-interface-solver ./instances/neos2.mps.gz neos2 -4717.666848100766 454.864697035006 454.864697035006
-
-      - name: test on neos-5075914-elvire
-        run:  ./bin/c-interface-solver ./instances/neos-5075914-elvire.mps.gz neos-5075914-elvire 277.3418879028853 323.8387966855066 323.8387966855066
 
       - name: test on csched008
-        run:  ./bin/c-interface-solver ./instances/csched008.mps.gz csched008 171.0 173.0 173.0
+        run:  ./bin/c-interface-solver ./instances/csched008.mps.gz 171.0 173.0 173.0 True
 
-      - name: test on qiu
-        run:  ./bin/c-interface-solver ./instances/qiu.mps.gz qiu -931.6388510598533 -132.87313694699986 -132.87313694699986
 
-      - name: test on tbfp-network
-        run:  ./bin/c-interface-solver ./instances/tbfp-network.mps.gz tbfp-network 23.261535493717908 24.16319444449999 24.1631944445
+      - name: test on mik-250-20-75-4
+        run:  ./bin/c-interface-solver ./instances/mik-250-20-75-4.mps.gz -61651.22709753319 -52300.99999999978 -52300.99999999978 True
 
-      - name: test on swath1
-        run:  ./bin/c-interface-solver ./instances/swath1.mps.gz swath1 334.49685810000005 379.0712957499999 379.0712957499999
 
-      - name: test on mcsched
-        run:  ./bin/c-interface-solver ./instances/mcsched.mps.gz mcsched 193774.753706623 211913.0 211913.0
+      - name: test on noswot
+        run:  ./bin/c-interface-solver ./instances/noswot.mps.gz -42.99999999999999 -41.0 -41.0 True
+
+
+      - name: test on gen_ip_026
+        run:  ./bin/c-interface-solver ./instances/gen_ip_026.mps.gz -22183.636163396615 -22096.116399468843 -22094.1361044 True
+
+
+      - name: test on gen_ip_003
+        run:  ./bin/c-interface-solver ./instances/gen_ip_003.mps.gz -2617.390732677057 -2578.458966754 -2578.458966754 True
+
+
+      - name: test on p0548
+        run:  ./bin/c-interface-solver ./instances/p0548.mps.gz 315.2549019607843 8691.0 8691.0 True
+
+
+      - name: test on mas76
+        run:  ./bin/c-interface-solver ./instances/mas76.mps.gz 38893.90364052266 40005.054142 40005.054142 True
+
+
+      - name: test on 23588
+        run:  ./bin/c-interface-solver ./instances/23588.mps.gz 7649.866133822498 8090.0 8090.0 True
+
+
+      - name: test on bppc8-02
+        run:  ./bin/c-interface-solver ./instances/bppc8-02.mps.gz 486.5 507.0 507.0 True
+
+
+      - name: test on neos-3610051-istra
+        run:  ./bin/c-interface-solver ./instances/neos-3610051-istra.mps.gz 44.55531250000001 49.0 49.0 True
+
+
+      - name: test on gen_ip_046
+        run:  ./bin/c-interface-solver ./instances/gen_ip_046.mps.gz 8295.854463356625 8440.742055285085 8440.9289693434 True
+
+
+      - name: test on c10400
+        run:  ./bin/c-interface-solver ./instances/c10400.mps.gz 5591.103878905595 5597.0 5597.0 True
+
+
+      - name: test on gen_ip_027
+        run:  ./bin/c-interface-solver ./instances/gen_ip_027.mps.gz -4338.606963602783 -4305.80580172 -4305.80580172 True
+
+
+      - name: test on CMS750_4
+        run:  ./bin/c-interface-solver ./instances/CMS750_4.mps.gz 250.0 252.0 252.0 True
+
 
   instances-batch-12:
     runs-on: ubuntu-20.04
@@ -625,50 +805,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on rmatr100-p10
-        run:  ./bin/c-interface-solver ./instances/rmatr100-p10.mps.gz rmatr100-p10 360.59330751695734 423.0 423.0
+      - name: test on enigma
+        run:  ./bin/c-interface-solver ./instances/enigma.mps.gz 0.0 0.0 0.0 True
 
-      - name: test on c10400
-        run:  ./bin/c-interface-solver ./instances/c10400.mps.gz c10400 5591.103878905595 5597.0 5597.0
 
-      - name: test on sct2
-        run:  ./bin/c-interface-solver ./instances/sct2.mps.gz sct2 -231.11696381946666 -231.0085722285712 -230.98916228571426
+      - name: test on nug08
+        run:  ./bin/c-interface-solver ./instances/nug08.mps.gz 203.50000000000873 214.0 214.0 True
 
-      - name: test on T2_200_2000_0
-        run:  ./bin/c-interface-solver ./instances/T2_200_2000_0.mps.gz T2_200_2000_0 1012.9090909090909 1043.0 1043.0
 
-      - name: test on lseu
-        run:  ./bin/c-interface-solver ./instances/lseu.mps.gz lseu 834.6823529411765 1120.0 1120.0
+      - name: test on gen_ip_018
+        run:  ./bin/c-interface-solver ./instances/gen_ip_018.mps.gz 3828.4067022922045 3918.812847632 3918.812847632 True
 
-      - name: test on neos-3118745-obra
-        run:  ./bin/c-interface-solver ./instances/neos-3118745-obra.mps.gz neos-3118745-obra 253.83333333333334 255.0 255.0
 
-      - name: test on misc07
-        run:  ./bin/c-interface-solver ./instances/misc07.mps.gz misc07 1415.0 2810.0 2810.0
+      - name: test on seymour1
+        run:  ./bin/c-interface-solver ./instances/seymour1.mps.gz 403.84647412519274 410.7637013945249 410.76370139452496 True
 
-      - name: test on markshare_5_0
-        run:  ./bin/c-interface-solver ./instances/markshare_5_0.mps.gz markshare_5_0 0.0 1.0 1.0
 
-      - name: test on CMS750_4
-        run:  ./bin/c-interface-solver ./instances/CMS750_4.mps.gz CMS750_4 250.0 252.0 252.0
+      - name: test on gen_ip_034
+        run:  ./bin/c-interface-solver ./instances/gen_ip_034.mps.gz -33249.75691978972 -33095.94140256082 -33093.53307157 True
 
-      - name: test on layer3
-        run:  ./bin/c-interface-solver ./instances/layer3.mps.gz layer3 -3724539998.602797 -2429509995.0 -2429509995.0
 
-      - name: test on j3014_5
-        run:  ./bin/c-interface-solver ./instances/j3014_5.mps.gz j3014_5 0.0 0.0 0.0
+      - name: test on j3041_1
+        run:  ./bin/c-interface-solver ./instances/j3041_1.mps.gz 0.12389597644749983 2.9999991015004204 2.9999991015004213 True
 
-      - name: test on mzzv42z
-        run:  ./bin/c-interface-solver ./instances/mzzv42z.mps.gz mzzv42z -21622.998481242863 -20540.0 -20540.0
 
-      - name: test on peg-solitaire-a3
-        run:  ./bin/c-interface-solver ./instances/peg-solitaire-a3.mps.gz peg-solitaire-a3 0.9999999999999868 1.0 1.0
+      - name: test on nu25-pr12
+        run:  ./bin/c-interface-solver ./instances/nu25-pr12.mps.gz 52757.5 53905.0 53905.0 True
 
-      - name: test on neos16
-        run:  ./bin/c-interface-solver ./instances/neos16.mps.gz neos16 429.0 446.0 446.0
 
-      - name: test on neos-1171448
-        run:  ./bin/c-interface-solver ./instances/neos-1171448.mps.gz neos-1171448 -309.0 -309.0 -309.0
+      - name: test on markshare_4_0
+        run:  ./bin/c-interface-solver ./instances/markshare_4_0.mps.gz 0.0 1.0 1.0 True
+
+
+      - name: test on neos-807639
+        run:  ./bin/c-interface-solver ./instances/neos-807639.mps.gz 332.9241174530533 454.2 454.2 True
+
+
+      - name: test on eil33-2
+        run:  ./bin/c-interface-solver ./instances/eil33-2.mps.gz 811.2789961228073 934.007916 934.007916 True
+
+
+      - name: test on layer
+        run:  ./bin/c-interface-solver ./instances/layer.mps.gz -22580999.99999999 -13855500.0 -13855500.0 True
+
+
+      - name: test on b-ball
+        run:  ./bin/c-interface-solver ./instances/b-ball.mps.gz -1.8181818181818181 -1.5 -1.5 True
+
+
+      - name: test on fiber
+        run:  ./bin/c-interface-solver ./instances/fiber.mps.gz 156082.5175925926 405935.1799999997 405935.18 True
+
+
+      - name: test on neos-5107597-kakapo
+        run:  ./bin/c-interface-solver ./instances/neos-5107597-kakapo.mps.gz 0.0 3644.9999999999964 3644.9999999999964 True
+
+
+      - name: test on danoint
+        run:  ./bin/c-interface-solver ./instances/danoint.mps.gz 62.637280418450764 65.66666666666666 65.66666666666666 True
+
 
   instances-batch-13:
     runs-on: ubuntu-20.04
@@ -676,50 +871,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on gen_ip_080
-        run:  ./bin/c-interface-solver ./instances/gen_ip_080.mps.gz gen_ip_080 844.0436754144787 922.3243695931446 922.3986551780001
+      - name: test on f2gap40400
+        run:  ./bin/c-interface-solver ./instances/f2gap40400.mps.gz 20650.898153963255 20772.0 20772.0 True
 
-      - name: test on neos5
-        run:  ./bin/c-interface-solver ./instances/neos5.mps.gz neos5 13.0 15.0 15.0
 
-      - name: test on p200x1188c
-        run:  ./bin/c-interface-solver ./instances/p200x1188c.mps.gz p200x1188c 5678.607088607595 15078.0 15078.0
+      - name: test on exp-1-500-5-5
+        run:  ./bin/c-interface-solver ./instances/exp-1-500-5-5.mps.gz 28427.048404552137 65886.99999999999 65886.99999999999 True
 
-      - name: test on gen_ip_050
-        run:  ./bin/c-interface-solver ./instances/gen_ip_050.mps.gz gen_ip_050 -5280.8518341124345 -5259.9563650858 -5259.63250196
-
-      - name: test on bienst1
-        run:  ./bin/c-interface-solver ./instances/bienst1.mps.gz bienst1 11.724137931034482 46.75 46.75
-
-      - name: test on momentum1
-        run:  ./bin/c-interface-solver ./instances/momentum1.mps.gz momentum1 72793.34525453381 109132.69308676905 109143.49375924861
-
-      - name: test on irp
-        run:  ./bin/c-interface-solver ./instances/irp.mps.gz irp 12123.530222333333 12159.409774000002 12159.492836
 
       - name: test on gen_ip_040
-        run:  ./bin/c-interface-solver ./instances/gen_ip_040.mps.gz gen_ip_040 2317.9135429676257 2365.883051282 2365.9127814404997
+        run:  ./bin/c-interface-solver ./instances/gen_ip_040.mps.gz 2317.9135429676257 2365.883051282 2365.9127814404997 True
 
-      - name: test on 22433
-        run:  ./bin/c-interface-solver ./instances/22433.mps.gz 22433 21240.52617079889 21476.0 21476.999999999996
 
-      - name: test on b-ball
-        run:  ./bin/c-interface-solver ./instances/b-ball.mps.gz b-ball -1.8181818181818181 -1.5 -1.5
+      - name: test on neos-4738912-atrato
+        run:  ./bin/c-interface-solver ./instances/neos-4738912-atrato.mps.gz 65143485.99418829 283602751.0469233 283627956.59528 True
 
-      - name: test on binkar10_1
-        run:  ./bin/c-interface-solver ./instances/binkar10_1.mps.gz binkar10_1 6637.188026943757 6742.200023999466 6742.200024000001
 
-      - name: test on nh97_potential
-        run:  ./bin/c-interface-solver ./instances/nh97_potential.mps.gz nh97_potential 1394.0 1418.0 1418.0
+      - name: test on markshare_5_0
+        run:  ./bin/c-interface-solver ./instances/markshare_5_0.mps.gz 0.0 1.0 1.0 True
 
-      - name: test on neos-4333596-skien
-        run:  ./bin/c-interface-solver ./instances/neos-4333596-skien.mps.gz neos-4333596-skien -14653956.914930066 -14612131.563235108 -14610731.0
 
-      - name: test on gen_ip_041
-        run:  ./bin/c-interface-solver ./instances/gen_ip_041.mps.gz gen_ip_041 8632.789490293586 8742.912539088928 8743.634619139
+      - name: test on gen_ip_062
+        run:  ./bin/c-interface-solver ./instances/gen_ip_062.mps.gz -10526.263089095593 -10459.059434806712 -10458.071328589998 True
 
-      - name: test on danoint
-        run:  ./bin/c-interface-solver ./instances/danoint.mps.gz danoint 62.637280418450764 65.66666666666666 65.66666666666666
+
+      - name: test on traininstance6
+        run:  ./bin/c-interface-solver ./instances/traininstance6.mps.gz 0.0 28289.99999999927 28290.0 True
+
+
+      - name: test on gen_ip_081
+        run:  ./bin/c-interface-solver ./instances/gen_ip_081.mps.gz 812.984965313456 835.2443364167914 835.2829775442999 True
+
+
+      - name: test on supportcase16
+        run:  ./bin/c-interface-solver ./instances/supportcase16.mps.gz 272.0000000000001 288.0 288.0 True
+
+
+      - name: test on gen-ip036
+        run:  ./bin/c-interface-solver ./instances/gen-ip036.mps.gz -4632.298152873464 -4606.92327131171 -4606.6796098376 True
+
+
+      - name: test on neos17
+        run:  ./bin/c-interface-solver ./instances/neos17.mps.gz 0.0006814985014984903 0.15000257742257736 0.15000257742257736 True
+
+
+      - name: test on tr12-30
+        run:  ./bin/c-interface-solver ./instances/tr12-30.mps.gz 14210.42652103263 130583.33352353303 130596.0 True
+
+
+      - name: test on pk1
+        run:  ./bin/c-interface-solver ./instances/pk1.mps.gz 0.0 11.0 11.0 True
+
+
+      - name: test on cod105
+        run:  ./bin/c-interface-solver ./instances/cod105.mps.gz -18.285714285714278 -12.0 -12.0 True
+
+
+      - name: test on T2_300_1000_0
+        run:  ./bin/c-interface-solver ./instances/T2_300_1000_0.mps.gz 721.0 736.0 736.0 True
+
 
   instances-batch-14:
     runs-on: ubuntu-20.04
@@ -727,50 +937,65 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on qnet1_o
-        run:  ./bin/c-interface-solver ./instances/qnet1_o.mps.gz qnet1_o 12095.57166666667 16029.692680999999 16029.692680999999
+      - name: test on khb05250
+        run:  ./bin/c-interface-solver ./instances/khb05250.mps.gz 95919464.0 106933275.6029085 106940226.0 True
 
-      - name: test on neos-911970
-        run:  ./bin/c-interface-solver ./instances/neos-911970.mps.gz neos-911970 23.259999999999998 54.760000000000005 54.760000000000005
 
-      - name: test on tr12-30
-        run:  ./bin/c-interface-solver ./instances/tr12-30.mps.gz tr12-30 14210.42652103263 130583.33352353303 130596.0
+      - name: test on n5-3
+        run:  ./bin/c-interface-solver ./instances/n5-3.mps.gz 2883.8235294117653 8104.999999999802 8104.999999999802 True
 
-      - name: test on cod105
-        run:  ./bin/c-interface-solver ./instances/cod105.mps.gz cod105 -18.285714285714278 -12.0 -12.0
 
-      - name: test on gen_ip_023
-        run:  ./bin/c-interface-solver ./instances/gen_ip_023.mps.gz gen_ip_023 -6684.0117994654875 -6582.410199229517 -6582.24640714
+      - name: test on ns1766074
+        run:  ./bin/c-interface-solver ./instances/ns1766074.mps.gz 5833.799999999998 inf inf False
 
-      - name: test on gen_ip_056
-        run:  ./bin/c-interface-solver ./instances/gen_ip_056.mps.gz gen_ip_056 5257.397105048657 5355.203120203918 5355.6844802645
 
-      - name: test on vpm1
-        run:  ./bin/c-interface-solver ./instances/vpm1.mps.gz vpm1 15.416666666666666 20.0 20.0
+      - name: test on draw-gemcutter
+        run:  ./bin/c-interface-solver ./instances/draw-gemcutter.mps.gz 1340.0 1621.0 1621.0 True
 
-      - name: test on gen_ip_018
-        run:  ./bin/c-interface-solver ./instances/gen_ip_018.mps.gz gen_ip_018 3828.4067022922045 3918.812847632 3918.812847632
 
-      - name: test on neos-631517
-        run:  ./bin/c-interface-solver ./instances/neos-631517.mps.gz neos-631517 6494999.9999359995 11489941.602695385 11490666.666634
+      - name: test on n2seq36q
+        run:  ./bin/c-interface-solver ./instances/n2seq36q.mps.gz 52000.0 52200.0 52200.0 True
 
-      - name: test on gr4x6
-        run:  ./bin/c-interface-solver ./instances/gr4x6.mps.gz gr4x6 185.55 202.35 202.35
 
-      - name: test on gen_ip_039
-        run:  ./bin/c-interface-solver ./instances/gen_ip_039.mps.gz gen_ip_039 2849.4123638986225 2891.7439627234003 2891.7439627234003
+      - name: test on gen_ip_080
+        run:  ./bin/c-interface-solver ./instances/gen_ip_080.mps.gz 844.0436754144787 922.3243695931446 922.3986551780001 True
 
-      - name: test on enigma
-        run:  ./bin/c-interface-solver ./instances/enigma.mps.gz enigma 0.0 0.0 0.0
 
-      - name: test on robot_sch_syn_plain_4_100_1328_0.01#1
-        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1328_0.01#1.mps.gz robot_sch_syn_plain_4_100_1328_0.01#1 45.97992 45.97992 45.97992
+      - name: test on gen_ip_032
+        run:  ./bin/c-interface-solver ./instances/gen_ip_032.mps.gz 2213.6620271493407 2298.692666604 2298.692666604 True
 
-      - name: test on bppc8-09
-        run:  ./bin/c-interface-solver ./instances/bppc8-09.mps.gz bppc8-09 444.4360465116279 472.0 472.0
 
-      - name: test on neos-3530905-gaula
-        run:  ./bin/c-interface-solver ./instances/neos-3530905-gaula.mps.gz neos-3530905-gaula 150.65359999999998 159.0 159.0
+      - name: test on timtab1CUTS
+        run:  ./bin/c-interface-solver ./instances/timtab1CUTS.mps.gz 613590.0954260388 764771.99999978 764771.99999978 True
+
+
+      - name: test on robot_sch_syn_plain_4_100_1605_0.01#0
+        run:  ./bin/c-interface-solver ./instances/robot_sch_syn_plain_4_100_1605_0.01#0.mps.gz 40.61877299536961 41.202830000000006 41.202830000000006 True
+
+
+      - name: test on gen_ip_005
+        run:  ./bin/c-interface-solver ./instances/gen_ip_005.mps.gz -8154.836920304866 -8084.442129889753 -8084.0210693 True
+
+
+      - name: test on timtab1
+        run:  ./bin/c-interface-solver ./instances/timtab1.mps.gz 28693.999999999996 764771.99999978 764771.99999978 True
+
+
+      - name: test on gen_ip_071
+        run:  ./bin/c-interface-solver ./instances/gen_ip_071.mps.gz 2218.337478908916 2240.3709167677303 2240.4213373348 True
+
+
+      - name: test on milo-v12-6-r2-40-1
+        run:  ./bin/c-interface-solver ./instances/milo-v12-6-r2-40-1.mps.gz 205532.32226507572 326481.14282798977 326481.14282798977 True
+
+
+      - name: test on ibarra
+        run:  ./bin/c-interface-solver ./instances/ibarra.mps.gz 390.61153877067596 837.63 837.63 True
+
+
+      - name: test on flugpl
+        run:  ./bin/c-interface-solver ./instances/flugpl.mps.gz 1167185.7255923203 1201500.0 1201500.0 True
+
 
   instances-batch-15:
     runs-on: ubuntu-20.04
@@ -778,41 +1003,54 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: test on leo1
-        run:  ./bin/c-interface-solver ./instances/leo1.mps.gz leo1 388573315.50960773 404208920.2910912 404227536.16
+      - name: test on ran14x18-disj-8
+        run:  ./bin/c-interface-solver ./instances/ran14x18-disj-8.mps.gz 3444.4210654085387 3712.0000001071076 3712.0000001071076 True
 
-      - name: test on n2seq36q
-        run:  ./bin/c-interface-solver ./instances/n2seq36q.mps.gz n2seq36q 52000.0 52200.0 52200.0
 
-      - name: test on a05100
-        run:  ./bin/c-interface-solver ./instances/a05100.mps.gz a05100 1697.7272727272727 1698.0 1698.0
+      - name: test on misc03
+        run:  ./bin/c-interface-solver ./instances/misc03.mps.gz 1910.0 3359.999999999999 3359.999999999999 True
 
-      - name: test on fiber
-        run:  ./bin/c-interface-solver ./instances/fiber.mps.gz fiber 156082.5175925926 405935.1799999997 405935.18
 
-      - name: test on swath3
-        run:  ./bin/c-interface-solver ./instances/swath3.mps.gz swath3 334.49685810000005 397.7612831738603 397.7612831738603
+      - name: test on pg
+        run:  ./bin/c-interface-solver ./instances/pg.mps.gz -11824.65738155926 -8674.342607117025 -8674.342607117025 True
 
-      - name: test on bppc8-02
-        run:  ./bin/c-interface-solver ./instances/bppc8-02.mps.gz bppc8-02 486.5 507.0 507.0
 
-      - name: test on beavma
-        run:  ./bin/c-interface-solver ./instances/beavma.mps.gz beavma 155777.62784710378 383284.9999999972 383284.9999999972
+      - name: test on gen_ip_037
+        run:  ./bin/c-interface-solver ./instances/gen_ip_037.mps.gz -760.1174661342742 -675.379792986 -675.379792986 True
 
-      - name: test on gen_ip_038
-        run:  ./bin/c-interface-solver ./instances/gen_ip_038.mps.gz gen_ip_038 -8862.40393395416 -8756.485905599999 -8756.485905599999
 
-      - name: test on neos-807639
-        run:  ./bin/c-interface-solver ./instances/neos-807639.mps.gz neos-807639 332.9241174530533 454.2 454.2
+      - name: test on 22433
+        run:  ./bin/c-interface-solver ./instances/22433.mps.gz 21240.52617079889 21476.0 21476.999999999996 True
 
-      - name: test on neos-1171737
-        run:  ./bin/c-interface-solver ./instances/neos-1171737.mps.gz neos-1171737 -195.0 -195.0 -195.0
 
-      - name: test on l152lav
-        run:  ./bin/c-interface-solver ./instances/l152lav.mps.gz l152lav 4656.363636363635 4722.0 4722.0
+      - name: test on enlight_hard
+        run:  ./bin/c-interface-solver ./instances/enlight_hard.mps.gz 0.0 37.0 37.0 True
 
-      - name: test on f2gap801600
-        run:  ./bin/c-interface-solver ./instances/f2gap801600.mps.gz f2gap801600 86570.12086656285 86676.0 86679.0
 
-      - name: test on nexp-50-20-4-2
-        run:  ./bin/c-interface-solver ./instances/nexp-50-20-4-2.mps.gz nexp-50-20-4-2 49.090909090909086 71.0 71.0
+      - name: test on sct2
+        run:  ./bin/c-interface-solver ./instances/sct2.mps.gz -231.11696381946666 -231.0085722285712 -230.98916228571426 True
+
+
+      - name: test on neos-1445765
+        run:  ./bin/c-interface-solver ./instances/neos-1445765.mps.gz -24699.19765976532 -17783.0 -17783.0 True
+
+
+      - name: test on neos-1425699
+        run:  ./bin/c-interface-solver ./instances/neos-1425699.mps.gz 3175204364.635297 3179698977.0 3179698977.0 True
+
+
+      - name: test on neos-3381206-awhea
+        run:  ./bin/c-interface-solver ./instances/neos-3381206-awhea.mps.gz 415.2399999999999 453.0 453.0 True
+
+
+      - name: test on qap10
+        run:  ./bin/c-interface-solver ./instances/qap10.mps.gz 332.56622765365717 340.0 340.0 True
+
+
+      - name: test on graphdraw-domain
+        run:  ./bin/c-interface-solver ./instances/graphdraw-domain.mps.gz 12672.0 19686.0 19686.0 True
+
+
+      - name: test on mcsched
+        run:  ./bin/c-interface-solver ./instances/mcsched.mps.gz 193774.753706623 211913.0 211913.0 True
+
