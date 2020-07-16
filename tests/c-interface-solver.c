@@ -157,11 +157,14 @@ int main( int argc, char **argv ) {
     Cbc_getBuildInfo(binfo);
     printf("%s\n", binfo);
 
-    char *s = strstr(argv[1], ".mps.gz");
+    char problemName[256] = "";
+    strcpy(problemName, argv[1]);
+
+    char *s = strstr(problemName, ".mps.gz");
     if (s)
         *s = '\0';
 
-    s = (strstr(argv[1], "instances/"));
+    s = (strstr(problemName, "instances/"));
     if (s)
         strcpy(instance_name, s+10);
     else
