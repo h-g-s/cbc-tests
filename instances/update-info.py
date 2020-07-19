@@ -8,12 +8,13 @@ objr = ""
 
 insts = set()
 
-f = open("instances.csv", "r")
-for l in f:
-    cols = l.split(",")
-    inst = cols[0]
-    insts.add(inst)
-f.close()
+
+#f = open("instances.csv", "r")
+#for l in f:
+#    cols = l.split(",")
+#    inst = cols[0]
+#    insts.add(inst)
+#f.close()
 
 if iname in insts:
     print("info for instance {} already computed.".format(iname))
