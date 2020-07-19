@@ -163,12 +163,18 @@ int main( int argc, char **argv ) {
     char *s = strstr(problemName, ".mps.gz");
     if (s)
         *s = '\0';
+    else {
+        s = strstr(problemName, ".mps");
+        if (s)
+            *s = '\0';
+    }
 
     s = (strstr(problemName, "instances/"));
     if (s)
         strcpy(instance_name, s+10);
-    else
-        strcpy(instance_name, s);
+    else {
+        strcpy(instance_name, problemName);
+    }
 
     double relaxObj = DBL_MAX;
     double bestBound = DBL_MAX;
